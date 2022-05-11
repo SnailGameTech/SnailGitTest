@@ -1,8 +1,8 @@
 
 
-# SnailGitTest
+# GitTest
 
-Snail 技术团队熟悉 Git 使用的仓库
+技术团队熟悉 Git 使用的仓库
 
 ## 加入项目
 
@@ -574,4 +574,3 @@ $ git archive
   - 标签，用来新增或删除相关的标签；
 
   ![Snipaste_2022-05-10_17-49-24](https://user-images.githubusercontent.com/94165481/167602766-50760279-db80-460c-ad3b-025359dfc557.png)
-
