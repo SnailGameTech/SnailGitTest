@@ -20,25 +20,28 @@ Snail 技术团队熟悉 Git 使用的仓库
 在开始使用Git 之前，需要确保电脑已经安装了 Git，这里只讲 Windows 下的 Git 安装，MacOS已经系统自带 Git 了。
 
 - 下载 GIt，可以通过这个官方链接下载 [Git](https://git-scm.com/) ；
+
 - 下载后，安装默认点击`下一步`安装完成即可，具体的安装流程可以参考[这个](https://www.cnblogs.com/xueweisuoyong/p/11914045.html)；
+
+- 在 Github 进入工程后，点击 `Code`,可以看到 Git 的下载地址，这里有几个区别，`HTTPS` 的地址主要通过Github的邮箱和密码来验证权限；`SSH` 则通过一个在工程中加入的唯一的 SSH key 来验证权限。
+
+- 以通过账号密码来验证权限为例，拷贝 `HTTPS` 的 Git 地址：
+
+  ![Snipaste_2022-05-10_14-53-05](https://user-images.githubusercontent.com/94165481/167568895-20289c9b-e166-475c-a5d6-2ff83bc118aa.png)
 
 ## 命令行操作
 
-  - 在 Github 进入工程后，点击 `Code`,可以看到 Git 的下载地址，这里有几个区别，`HTTPS` 的地址主要通过Github的邮箱和密码来验证权限；`SSH` 则通过一个在工程中加入的唯一的 SSH key 来验证权限。
+![bg2015120901](https://user-images.githubusercontent.com/94165481/167757863-13ee8f57-a7ce-4cc4-b67e-e033d3dbe88c.png)
 
-  - 以通过账号密码来验证权限为例，拷贝 `HTTPS` 的 git 地址：
+`Windodws` 用户打开 `PowerShell`， `Mac` 用户打开 `终端`；
 
-    ![Snipaste_2022-05-10_14-53-05](https://user-images.githubusercontent.com/94165481/167568895-20289c9b-e166-475c-a5d6-2ff83bc118aa.png)
-
- - `Windodws` 用户打开 `PowerShell`， `Mac` 用户打开 `终端`；
-
- - 查看用户 Git 信息，用来查看登录的邮箱和地址：
+ - **查看用户 Git 信息**，用来查看登录的邮箱和地址：
 
    ```bash
    git config --list
    ```
 
-   ![Snipaste_2022-05-10_15-15-57](https://user-images.githubusercontent.com/94165481/167571088-efe74c8f-29d1-4cb8-8ce5-260bcf798947.png)
+   ![InkedSnipaste_2022-05-10_15-15-57_LI](https://user-images.githubusercontent.com/94165481/167757407-bf7ee75d-117c-483c-a4dc-fbae97094554.jpg)
 
    可以看到，当前的用户名和邮箱。如果不是你的GIthub的邮箱，那么可以通过下面的命令来修改。
 
@@ -50,7 +53,7 @@ Snail 技术团队熟悉 Git 使用的仓库
    $ git config [--global] user.email "[email address]"
    ```
 
-   ![Snipaste_2022-05-10_15-40-59](https://user-images.githubusercontent.com/94165481/167575428-7a2f146e-a441-40ec-8dfa-5fd1238a0a5f.png)
+   ![InkedSnipaste_2022-05-10_15-40-59_LI](https://user-images.githubusercontent.com/94165481/167757553-1bd23799-37fb-4dd3-89e3-6507cd79d21a.jpg)
 
 ​		用户名和邮箱已经修改。
 
@@ -91,7 +94,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
 ​		目前代码已经成功提交到了暂存区，也就是说现在只是提交到了我们本地，接下来，我们需要将这部分代码推送到远程服务器，这样	其他的人也可以获取最新的代码。
 
-- **查看分支**。在提交 git 变化到远程服务器之前，我们来查看有远程有哪些分支：
+- **查看分支**。在提交 Git 变化到远程服务器之前，我们来查看有远程有哪些分支：
 
   ```bash
   # 列出所有本地分支
@@ -117,7 +120,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
 ​		![Snipaste_2022-05-10_16-28-47](https://user-images.githubusercontent.com/94165481/167584596-a9ae53b0-9728-4cf4-828e-1297acf425db.png)
 
-​		打开Github，发现我们已经成功的上传了我们的本地代码到远程服务器了。
+​		打开 Github，发现我们已经成功的上传了我们的本地代码到远程服务器了。
 
 ![Snipaste_2022-05-10_16-29-39](https://user-images.githubusercontent.com/94165481/167584751-88ffc47f-445a-459f-a886-79af1954c382.png)
 
@@ -214,8 +217,6 @@ Snail 技术团队熟悉 Git 使用的仓库
   ```
 
   ![Snipaste_2022-05-11_10-06-45](https://user-images.githubusercontent.com/94165481/167754635-7ad74ade-b568-4845-a487-dfabc4d1e50c.png)
-
-
 
 
 
@@ -573,3 +574,4 @@ $ git archive
   - 标签，用来新增或删除相关的标签；
 
   ![Snipaste_2022-05-10_17-49-24](https://user-images.githubusercontent.com/94165481/167602766-50760279-db80-460c-ad3b-025359dfc557.png)
+
