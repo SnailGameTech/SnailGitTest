@@ -1,6 +1,6 @@
 
 
-# Snail_Git_test
+# SnailGitTest
 
 Snail 技术团队熟悉 Git 使用的仓库
 
