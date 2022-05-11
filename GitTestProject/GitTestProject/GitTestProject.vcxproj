@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F83B9103-29A4-4F70-93E8-7DD9FBB0E6EE}</ProjectGuid>
-    <RootNamespace>Git_test_project</RootNamespace>
+    <ProjectGuid>{2A6C1CB0-FAD3-4B27-A5F9-804F0643F301}</ProjectGuid>
+    <RootNamespace>GitTestProject</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
