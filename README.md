@@ -9,11 +9,11 @@
   - 注册 Github 就不再赘述；
 
   - 加入一个项目需要通过项目拥有人的邀请，邀请邮件会发送到邮箱，通过邮箱链接接受邀请；
-    ![Snipaste_2022-05-10_14-52-37](https://user-images.githubusercontent.com/94165481/167567187-045cb732-af5a-43ed-9c17-52dba6fd28fa.png)
+    ![InkedSnipaste_2022-05-10_14-52-37_LI](https://user-images.githubusercontent.com/105333498/167761998-b66e44a2-4ad7-454f-ad81-ca8bfaa733b4.jpg)
 
   - 加入成功后，我们就可以在自己的 Github 首页看到自己的 `Repositories`;
 
-    ![Snipaste_2022-05-10_15-00-38](https://user-images.githubusercontent.com/94165481/167567672-4a2ee196-3eb9-430d-8ae0-c2def12f8a63.png)
+    ![Inked167567672-4a2ee196-3eb9-430d-8ae0-c2def12f8a63_LI](https://user-images.githubusercontent.com/105333498/167762192-fcf1d8ff-e7ef-413c-9d98-7612cb48d800.jpg)
 
 ## 开始之前
 
@@ -27,7 +27,7 @@
 
 - 以通过账号密码来验证权限为例，拷贝 `HTTPS` 的 Git 地址：
 
-  ![Snipaste_2022-05-10_14-53-05](https://user-images.githubusercontent.com/94165481/167568895-20289c9b-e166-475c-a5d6-2ff83bc118aa.png)
+  ![InkedSnipaste_2022-05-10_14-53-05_LI](https://user-images.githubusercontent.com/105333498/167762309-fb05d64a-d425-4b5a-8531-aac4ebf3ee54.jpg)
 
 ## 命令行操作
 
@@ -64,13 +64,13 @@
   $ git clone [url]
   ```
 
-  ![Snipaste_2022-05-10_15-45-40](https://user-images.githubusercontent.com/94165481/167576199-89766902-9f40-4c4a-a9cb-9f1ccf62ee7e.png)
+  ![Snipaste_2022-05-11_11-31-58](https://user-images.githubusercontent.com/105333498/167763698-945964f3-8fd3-4885-8afe-6d32abd99135.png)
 
-![Snipaste_2022-05-10_15-46-30](https://user-images.githubusercontent.com/94165481/167576365-df6f09ca-2a78-4a3f-b317-2bc487abfe2f.png)
+![Snipaste_2022-05-11_11-32-48](https://user-images.githubusercontent.com/105333498/167763794-1e2b8f88-7979-4e8c-b983-1fd4f57ea91c.png)
 
 ​		完成之后，文件夹中已经有相应的工程了，由于当前的工程只有默认的 `README.md` 的文件，我们可以来新建一个工程。
 
-​		![Snipaste_2022-05-10_15-53-10](https://user-images.githubusercontent.com/94165481/167577650-c9e523d1-7f4d-48de-b966-9dff9be7dd78.png)
+​		![Snipaste_2022-05-11_11-33-29](https://user-images.githubusercontent.com/105333498/167763859-20d2e670-7286-4306-9053-46689a7d551e.png)
 
 - **添加代码到暂存区**。添加新建的工程代码：
 
@@ -81,7 +81,7 @@
   $ git status
   ```
 
-  ![Snipaste_2022-05-10_15-56-16](https://user-images.githubusercontent.com/94165481/167578226-9b3aa951-bf04-49f5-9678-ab390610ba95.png)
+  ![Snipaste_2022-05-11_11-35-52](https://user-images.githubusercontent.com/105333498/167764092-58aa03a9-69bc-44cc-8e13-28c9c0b089ef.png)
 
 - **提交代码**。提交暂存区的代码：
 
@@ -90,7 +90,7 @@
   $ git commit -m [message]
   ```
 
-  ![Snipaste_2022-05-10_16-02-51](https://user-images.githubusercontent.com/94165481/167579465-1b38692b-d39c-4ed8-8d8f-b9fce2b73b4c.png)
+  ![Snipaste_2022-05-11_11-37-09](https://user-images.githubusercontent.com/105333498/167764214-a8ed87b0-c599-4b20-bee7-5417e50cc2c2.png)
 
 ​		目前代码已经成功提交到了暂存区，也就是说现在只是提交到了我们本地，接下来，我们需要将这部分代码推送到远程服务器，这样	其他的人也可以获取最新的代码。
 
@@ -99,15 +99,13 @@
   ```bash
   # 列出所有本地分支
   $ git branch
-  
   # 列出所有远程分支
   $ git branch -r
-  
   # 列出所有本地分支和远程分支
   $ git branch -a
   ```
 
-  ![Snipaste_2022-05-10_16-08-39](https://user-images.githubusercontent.com/94165481/167580610-5efa632d-ab4b-405a-987e-b4e8a12425fe.png)
+  ![Snipaste_2022-05-11_11-38-13](https://user-images.githubusercontent.com/105333498/167764336-bb2e1078-ae23-4335-9feb-c90a636f4942.png)
 
 ​		可以看到，本地当前分支为 `main`。远程分支目前有`main` 分支，这一般为主分支。我们当前是新建项目，那么就会推送到主分支。
 
@@ -118,17 +116,15 @@
   $ git push [remote远程分支] [branch本地分支]
   ```
 
-​		![Snipaste_2022-05-10_16-28-47](https://user-images.githubusercontent.com/94165481/167584596-a9ae53b0-9728-4cf4-828e-1297acf425db.png)
+​		![Snipaste_2022-05-11_13-32-45](https://user-images.githubusercontent.com/105333498/167776131-93d65ede-7b28-4ad7-8b80-51b55f603a2c.png)
 
 ​		打开 Github，发现我们已经成功的上传了我们的本地代码到远程服务器了。
 
-![Snipaste_2022-05-10_16-29-39](https://user-images.githubusercontent.com/94165481/167584751-88ffc47f-445a-459f-a886-79af1954c382.png)
+​		![InkedSnipaste_2022-05-11_11-50-44_LI](https://user-images.githubusercontent.com/105333498/167776257-65898e88-4c86-4ac6-a5b5-53e3891a2402.jpg)
 
 ​		**注意**，这里可能用人遇到无法上传的问题：
 
-​		![Snipaste_2022-05-10_16-36-43](https://user-images.githubusercontent.com/94165481/167586234-49e6d7ac-a437-40fd-89ea-2b382390dde6.png)
-
-​		![Snipaste_2022-05-10_16-31-31](https://user-images.githubusercontent.com/94165481/167585165-9ad1458c-4dfb-49e1-87f8-91887dc691ca.png)
+​		 ![Snipaste_2022-05-11_13-37-05](https://user-images.githubusercontent.com/105333498/167776358-fac8dd5a-6332-4502-ab54-fd056908544b.png)
 
 ​		这可能是由于上传时 `HTTPS` 的验证导致的，可以切换为 `SSH` 的方式上传，或者关闭 `HTTPS`：`git config --global --unset http.proxy` 。再试试是否可以推送成功。
 
@@ -137,29 +133,15 @@
   ```bash
   # 列出所有tag
   $ git tag
-  
   # 新建一个tag在当前commit
   $ git tag [tag]
-  
-  # 新建一个tag在指定commit
-  $ git tag [tag] [commit]
-  
-  # 查看tag信息
-  $ git show [tag]
-  
-  # 提交指定tag
-  $ git push [remote] [tag]
-  
   # 提交所有tag
   $ git push [remote] --tags
-  
-  # 新建一个分支，指向某个tag
-  $ git checkout -b [branch] [tag]
   ```
 
-  创建一个标签为 `1.0.0`的标签，并推送到远程分支。
+  创建一个标签为 `1.0.1`的标签，并推送到远程分支。
 
-  ![Snipaste_2022-05-10_16-41-39](https://user-images.githubusercontent.com/94165481/167587209-c1caa3e9-79c2-4514-82bd-2d15ed0b5f60.png)
+    ![Snipaste_2022-05-11_13-40-46](https://user-images.githubusercontent.com/105333498/167776750-e2e4d69b-e29e-432d-920d-b2d655deecec.png)
 
 ​		现在已经可以在 Github 主页看到相关的 `tag`：	![Snipaste_2022-05-10_16-42-52](https://user-images.githubusercontent.com/94165481/167587491-1f5dfe1f-544a-4a14-9d7b-fe67a0a39aa1.png)
 
@@ -170,7 +152,7 @@
   $ git branch [branch-name]
   ```
 
-  ![Snipaste_2022-05-10_16-49-52](https://user-images.githubusercontent.com/94165481/167588923-a03da65e-b708-4c6d-81cd-aafaec6a132a.png)
+  ![Snipaste_2022-05-11_13-48-37](https://user-images.githubusercontent.com/105333498/167777623-643e9ea3-53ce-4279-ba11-d807262656a3.png)
 
   已经创建一个名为 `develop` 的分支，但是当前还没有将本地的分支切换到 `develop`。
 
@@ -179,7 +161,7 @@
   $ git checkout [branch-name]
   ```
 
-  ![Snipaste_2022-05-10_16-49-07](https://user-images.githubusercontent.com/94165481/167588758-329c5fe0-323e-40ae-a32c-d26076da1482.png)
+  ![Snipaste_2022-05-11_13-49-24](https://user-images.githubusercontent.com/105333498/167777714-e3ebe7dd-3108-447e-beaf-a25a81ad629e.png)
 
 - **推送分支到远程**。
 
@@ -188,14 +170,13 @@
   $ git push origin [branch-name]
   ```
 
-  ![Snipaste_2022-05-10_16-55-44](https://user-images.githubusercontent.com/94165481/167590130-5385a8e4-0d38-4f16-8425-0527f0b0649a.png)
+  ![Snipaste_2022-05-11_13-50-37](https://user-images.githubusercontent.com/105333498/167777861-310cdf42-145e-4050-81e4-f8f52c91fbbb.png)
 
 - **远程同步**。在我们已经成功的创建远程分支之后，一段时间之后，我们需要先同步远程的代码到本地。
 
   ```bash
   # 下载远程仓库的所有变动
   $ git fetch [remote]
-  
   # 取回远程仓库的变化，并与本地分支合并
   $ git pull [remote] [branch]
   ```
@@ -208,17 +189,15 @@
   ```bash
   # 切换到主分支
   $ git checkout main
-  
   # 主分支更新最新的代码
   $ git pull
-  
   # 合并指定分支到当前分支
   $ git merge [branch]
   ```
 
-  ![Snipaste_2022-05-11_10-06-45](https://user-images.githubusercontent.com/94165481/167754635-7ad74ade-b568-4845-a487-dfabc4d1e50c.png)
+   ![Snipaste_2022-05-11_13-52-56](https://user-images.githubusercontent.com/105333498/167778160-6b2361ed-b0e1-43a3-8620-09079de4f59a.png)
 
-
+​		![Snipaste_2022-05-11_13-53-51](https://user-images.githubusercontent.com/105333498/167778292-9864ff2d-6f32-407a-844a-b5e6a6874eb3.png)
 
 ##  常用 Git 命令清单
 
