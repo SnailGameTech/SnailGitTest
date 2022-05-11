@@ -161,19 +161,19 @@
 
 具体操作如下：
 
-下面我用自己本地与 Github 的操作测试上面的命令，加深对上面的命令的理解和使用，当我在本地新建一个 Github 仓库中没有的文件：
+  下面我用自己本地与 Github 的操作测试上面的命令，加深对上面的命令的理解和使用，当我在本地新建一个 Github 仓库中没有的文件：
 
-![Snipaste_2022-05-11_14-49-05](https://user-images.githubusercontent.com/105333498/167786261-bae058fb-6fa9-4309-a08b-59fb32e5ee8a.png)
+  ![Snipaste_2022-05-11_14-49-05](https://user-images.githubusercontent.com/105333498/167786261-bae058fb-6fa9-4309-a08b-59fb32e5ee8a.png)
 
 
 
-![Snipaste_2022-05-11_14-49-47](https://user-images.githubusercontent.com/105333498/167786401-023a66ec-d91b-4e81-b822-a553dc933874.png)
+  ![Snipaste_2022-05-11_14-49-47](https://user-images.githubusercontent.com/105333498/167786401-023a66ec-d91b-4e81-b822-a553dc933874.png)
 
-可以看到文件的显示 `Untracked files：`未被追踪的文件，**「表示该文件未被git追踪管理」**。
+  可以看到文件的显示 `Untracked files：`未被追踪的文件，**「表示该文件未被git追踪管理」**。
 
-新添加的文件可以通过 **「git add添加到在暂存区」**，**「这样文件就能够被 Git进行追踪」**，此时再使用  `git status` 查看文件时，就可以看到两个文件已经是以 new file 的形式进行显示：
+  新添加的文件可以通过 **「git add添加到在暂存区」**，**「这样文件就能够被 Git进行追踪」**，此时再使用  `git status` 查看文件时，就可以看到两个文件已经是以 new file 的形式进行显示：
 
-![Snipaste_2022-05-11_14-51-31](https://user-images.githubusercontent.com/105333498/167786750-b7197e51-b095-4142-ba8c-fa71ffcf16f2.png)
+  ![Snipaste_2022-05-11_14-51-31](https://user-images.githubusercontent.com/105333498/167786750-b7197e51-b095-4142-ba8c-fa71ffcf16f2.png)
 
 - **从暂存区回退代码到工作区**
 
@@ -238,7 +238,7 @@
 
   上面也演示了 `git reset` 命令，它既可以回退版本，又可以把暂存区的修改回退到工作区。当我们用 HEAD 时，表示最新的版本。
 
-  当你提交了修改后，可以使用 `git diff` 查看两次提交之间的变动，它的本质就是**「任意比较两个仓库之间的差异」**：
+  当你提交了修改后，可以使用 `git diff` 查看两次提交之间的变动，它的本质就是 **「任意比较两个仓库之间的差异」**：
 
   ![v2-fe22f7502674dcefc2490811bac6cec6_720w](https://user-images.githubusercontent.com/105333498/167790115-43b3f7f2-d59d-4041-b20b-9d661012fdc3.jpg)
 
@@ -299,7 +299,7 @@ Git 的初始化中有一条默认的主分支叫做 `master`，每一次的提�
 
 ![v2-9272ba481dfa50b453944cc7cabb5af1_720w](https://user-images.githubusercontent.com/105333498/167791210-9349a373-ef9a-4406-89d3-235e28c9b1c3.jpg)
 
-在 B 的本地环境中，他的**「本地仓库master还是指向gs234」**，B 在自己新建立的一个分支`bran`中进行开发，开发完后合并分支，最后`master`就会指向`ed489`。
+在 B 的本地环境中，他的 **「本地仓库master还是指向gs234」**，B 在自己新建立的一个分支`bran`中进行开发，开发完后合并分支，最后`master`就会指向`ed489`。
 
 当B再次提交代码，Git 就会检查远程仓库与 B 的本地仓库，进行对比后，发现远程仓库存在 B 的本地仓库不存在的代码，就需要 B 将远程仓库执行 `git pull`后，自行解决冲突。
 
@@ -399,7 +399,7 @@ Git 的初始化中有一条默认的主分支叫做 `master`，每一次的提�
 
 - **拉取分支**。
 
-      ```bash
+    ```bash
     # 下载远程仓库的所有变动
     $ git fetch [remote]
     # 取回远程仓库的变化，并与本地分支合并
