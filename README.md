@@ -15,6 +15,13 @@ Snail 技术团队熟悉 Git 使用的仓库
 
     ![Snipaste_2022-05-10_15-00-38](https://user-images.githubusercontent.com/94165481/167567672-4a2ee196-3eb9-430d-8ae0-c2def12f8a63.png)
 
+## 开始之前
+
+在开始使用Git 之前，需要确保电脑已经安装了 Git，这里只讲 Windows 下的 Git 安装，MacOS已经系统自带 Git 了。
+
+- 下载 GIt，可以通过这个官方链接下载 [Git](https://git-scm.com/) ；
+- 下载后，安装默认点击`下一步`安装完成即可，具体的安装流程可以参考[这个](https://www.cnblogs.com/xueweisuoyong/p/11914045.html)；
+
 ## 命令行操作
 
   - 在 Github 进入工程后，点击 `Code`,可以看到 Git 的下载地址，这里有几个区别，`HTTPS` 的地址主要通过Github的邮箱和密码来验证权限；`SSH` 则通过一个在工程中加入的唯一的 SSH key 来验证权限。
@@ -25,7 +32,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
  - `Windodws` 用户打开 `PowerShell`， `Mac` 用户打开 `终端`；
 
- - 查看用户Git信息，用来查看登录的邮箱和地址：
+ - 查看用户 Git 信息，用来查看登录的邮箱和地址：
 
    ```bash
    git config --list
@@ -35,7 +42,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
    可以看到，当前的用户名和邮箱。如果不是你的GIthub的邮箱，那么可以通过下面的命令来修改。
 
- - 修改全局的用户名和邮箱：
+ - **修改全局的用户名和邮箱**。
 
    ```bash
    # 设置提交代码时的用户信息
@@ -47,7 +54,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
 ​		用户名和邮箱已经修改。
 
-- 克隆项目。下载项目代码：
+- **克隆项目**。下载项目代码：
 
   ```bash
   # 下载一个项目和它的整个代码历史
@@ -62,7 +69,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
 ​		![Snipaste_2022-05-10_15-53-10](https://user-images.githubusercontent.com/94165481/167577650-c9e523d1-7f4d-48de-b966-9dff9be7dd78.png)
 
-- 添加代码到暂存区。添加新建的工程代码：
+- **添加代码到暂存区**。添加新建的工程代码：
 
   ```bash
   # 添加当前目录的所有文件到暂存区
@@ -73,7 +80,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
   ![Snipaste_2022-05-10_15-56-16](https://user-images.githubusercontent.com/94165481/167578226-9b3aa951-bf04-49f5-9678-ab390610ba95.png)
 
-- 提交代码。提交暂存区的代码：
+- **提交代码**。提交暂存区的代码：
 
   ```bash
   # 提交暂存区到仓库区
@@ -84,7 +91,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
 ​		目前代码已经成功提交到了暂存区，也就是说现在只是提交到了我们本地，接下来，我们需要将这部分代码推送到远程服务器，这样	其他的人也可以获取最新的代码。
 
-- 查看分支。在提交 git 变化到远程服务器之前，我们来查看有远程有哪些分支：
+- **查看分支**。在提交 git 变化到远程服务器之前，我们来查看有远程有哪些分支：
 
   ```bash
   # 列出所有本地分支
@@ -101,7 +108,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
 ​		可以看到，本地当前分支为 `main`。远程分支目前有`main` 分支，这一般为主分支。我们当前是新建项目，那么就会推送到主分支。
 
-- 推送远程分支。
+- **推送远程分支**。
 
   ```bash
   # 上传本地指定分支到远程仓库
@@ -122,7 +129,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
 ​		这可能是由于上传时 `HTTPS` 的验证导致的，可以切换为 `SSH` 的方式上传，或者关闭 `HTTPS`：`git config --global --unset http.proxy` 。再试试是否可以推送成功。
 
-- 新增标签。
+- **新增标签**。
 
   ```bash
   # 列出所有tag
@@ -153,7 +160,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
 ​		现在已经可以在 Github 主页看到相关的 `tag`：	![Snipaste_2022-05-10_16-42-52](https://user-images.githubusercontent.com/94165481/167587491-1f5dfe1f-544a-4a14-9d7b-fe67a0a39aa1.png)
 
-- 分支。在我们创建好 `main` 分支后，后续的开发都不会在 `main` 分支，一般会建立一个新的分支为 `develop` 。
+- **分支**。在我们创建好 `main` 分支后，后续的开发都不会在 `main` 分支，一般会建立一个新的分支为 `develop` 。
 
   ```bash
   # 新建一个分支，但依然停留在当前分支
@@ -171,7 +178,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
   ![Snipaste_2022-05-10_16-49-07](https://user-images.githubusercontent.com/94165481/167588758-329c5fe0-323e-40ae-a32c-d26076da1482.png)
 
-- 推送分支到远程。
+- **推送分支到远程**。
 
   ```bash
   # 推送本地分支到远程
@@ -180,7 +187,7 @@ Snail 技术团队熟悉 Git 使用的仓库
 
   ![Snipaste_2022-05-10_16-55-44](https://user-images.githubusercontent.com/94165481/167590130-5385a8e4-0d38-4f16-8425-0527f0b0649a.png)
 
-- 远程同步。在我们已经成功的创建远程分支之后，一段时间之后，我们需要先同步远程的代码到本地。
+- **远程同步**。在我们已经成功的创建远程分支之后，一段时间之后，我们需要先同步远程的代码到本地。
 
   ```bash
   # 下载远程仓库的所有变动
@@ -193,7 +200,24 @@ Snail 技术团队熟悉 Git 使用的仓库
   - `$ git fetch [remote]` 是用来将远程的代码拉取到本地，但是不和本地的代码合并，而是放在暂存区。
   - `git pull [remote] [branch]` 是将远程的代码拉取到本地，并且将代码和本地的代码合并。
 
+- **合并分支**。当我们在分支开发了一个功能，现在测试通过需要把分支的代码合并到某个分支，比如合并 `develop` 分支到 `main` 分支：
+
+  ```bash
+  # 切换到主分支
+  $ git checkout main
   
+  # 主分支更新最新的代码
+  $ git pull
+  
+  # 合并指定分支到当前分支
+  $ git merge [branch]
+  ```
+
+  ![Snipaste_2022-05-11_10-06-45](https://user-images.githubusercontent.com/94165481/167754635-7ad74ade-b568-4845-a487-dfabc4d1e50c.png)
+
+
+
+
 
 ##  常用 Git 命令清单
 
@@ -493,7 +517,7 @@ $ git archive
 
 ## GUI 操作
 
-目前市场几乎所有的 IDE 都集成了 Git 的 GUI。可以选择命令行操作，也可以使用一些第三方的 GUI 来管理 git。常见的 git 的 GUI 软件包含：[GitHub Desktop GitHub 官方客户端](https://desktop.github.com/) 、[SourceTree【推荐】](https://www.sourcetreeapp.com/) 、[Tower【好用但付费】](https://www.git-tower.com/windows) 、[SmartGit](https://www.syntevo.com/smartgit/) 、[Sublime Merge](https://www.sublimemerge.com/) 、[TortoiseGit](https://tortoisegit.org/)。
+目前市场几乎所有的 IDE 都集成了 Git 的 GUI。可以选择命令行操作，也可以使用一些第三方的 GUI 来管理 Git。常见的 Git 的 GUI 软件包含：[GitHub Desktop GitHub 官方客户端](https://desktop.github.com/) 、[SourceTree【推荐】](https://www.sourcetreeapp.com/) 、[Tower【好用但付费】](https://www.git-tower.com/windows) 、[SmartGit](https://www.syntevo.com/smartgit/) 、[Sublime Merge](https://www.sublimemerge.com/) 、[TortoiseGit](https://tortoisegit.org/)。
 
 可以根据个人的使用习惯和偏好选择自己喜欢的GUI。目前我以最常用的 Git 软件 SourceTree 为例。
 
@@ -503,25 +527,25 @@ $ git archive
 
 
 
-- 本地分支，包含小圆点，并字体加粗的则是当前本地分支，可以看到当前分支为 `develop`：
+- **本地分支**，包含小圆点，并字体加粗的则是当前本地分支，可以看到当前分支为 `develop`：
 
   ![Snipaste_2022-05-10_17-28-39](https://user-images.githubusercontent.com/94165481/167596896-fb86fbaf-802a-40e1-8bb1-c176cd8143fd.png)
 
-- 远程分成：
+- **远程分支**：
 
 ![Snipaste_2022-05-10_17-30-12](https://user-images.githubusercontent.com/94165481/167597184-42709cc2-afea-4398-8a4f-ab558e2d2537.png)
 
-- 标签：
+- **标签**：
 
   ![Snipaste_2022-05-10_17-33-50](https://user-images.githubusercontent.com/94165481/167597934-9bc8298a-b46b-44b9-af27-c978d3099958.png)
 
-- 提交历史，可以在提交历史看到当前的分支、标签、远程分支、提交内容、提交日期、提交用户以及每个提交的哈希值：
+- **提交历史**，可以在提交历史看到当前的分支、标签、远程分支、提交内容、提交日期、提交用户以及每个提交的哈希值：
 
 ![Snipaste_2022-05-10_17-36-05](https://user-images.githubusercontent.com/94165481/167598367-198b4c92-cbeb-4856-bfe2-c93d98a796aa.png)
 
 
 
-- 修改文件，待提交：
+- **修改文件**，待提交：
   1.  文件状态，查看当前修改的文件；
   2. 提交，待提交的文件数量等；
   3. 未暂存文件，还没有添加到暂存区的文件，提交前需先点击`暂存所有`，相当于命令 `git add .`。
@@ -530,13 +554,13 @@ $ git archive
 
 ![Snipaste_2022-05-10_17-42-01](https://user-images.githubusercontent.com/94165481/167599608-6b2a6e0c-cdf2-461c-a712-d90f3966db04.png)
 
-- 添加文件到暂存区。点击右侧"+"按钮添加文件到暂存区。查看哪些文件需要添加到本次提交，有些文件你修改来但还没有测试通过，所以暂未提交的话，就无需点击“+”。
+- **添加文件到暂存区**。点击右侧"+"按钮添加文件到暂存区。查看哪些文件需要添加到本次提交，有些文件你修改来但还没有测试通过，所以暂未提交的话，就无需点击“+”。
 
   ![Snipaste_2022-05-10_17-39-48](https://user-images.githubusercontent.com/94165481/167600305-7298d4fb-aced-4923-8cb9-bd56769517a0.png)
 
-- 提交更新。在选择好了暂存文件后，并且输入了提交留言，可以点击“提交”按钮，那么就会将我们当前修改的内容更新到自己本地的git 仓库中了。
+- **提交更新**。在选择好了暂存文件后，并且输入了提交留言，可以点击**提交**按钮，那么就会将我们当前修改的内容更新到自己本地的Git 仓库中了。
 
-- 快捷操作按钮：
+- **快捷操作按钮**：
 
   - 提交，有文件更新需要提交；
   - 拉取，拉取远程仓库的代码并合并到代码中，相当于执行 `git pull [remote] [branch]`;
