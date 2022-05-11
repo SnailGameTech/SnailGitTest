@@ -19,19 +19,19 @@
 
 在开始使用Git 之前，需要确保电脑已经安装了 Git，这里只讲 Windows 下的 Git 安装，MacOS已经系统自带 Git 了。
 
-- 下载 GIt，可以通过这个官方链接下载 [Git](https://git-scm.com/) ；
+  - 下载 GIt，可以通过这个官方链接下载 [Git](https://git-scm.com/) ；
 
-- 下载后，安装默认点击`下一步`安装完成即可，具体的安装流程可以参考[这个](https://www.cnblogs.com/xueweisuoyong/p/11914045.html)；
+  - 下载后，安装默认点击`下一步`安装完成即可，具体的安装流程可以参考[这个](https://www.cnblogs.com/xueweisuoyong/p/11914045.html)；
 
-- 在 Github 进入工程后，点击 `Code`,可以看到 Git 的下载地址，这里有几个区别，`HTTPS` 的地址主要通过Github的邮箱和密码来验证权限；`SSH` 则通过一个在工程中加入的唯一的 SSH key 来验证权限。
+  - 在 Github 进入工程后，点击 `Code`,可以看到 Git 的下载地址，这里有几个区别，`HTTPS` 的地址主要通过Github的邮箱和密码来验证权限；`SSH` 则通过一个在工程中加入的唯一的 SSH key 来验证权限。
 
-- 以通过账号密码来验证权限为例，拷贝 `HTTPS` 的 Git 地址：
+  - 以通过账号密码来验证权限为例，拷贝 `HTTPS` 的 Git 地址：
 
   ![InkedSnipaste_2022-05-10_14-53-05_LI](https://user-images.githubusercontent.com/105333498/167762309-fb05d64a-d425-4b5a-8531-aac4ebf3ee54.jpg)
 
 ## 命令行操作
 
-![bg2015120901](https://user-images.githubusercontent.com/94165481/167757863-13ee8f57-a7ce-4cc4-b67e-e033d3dbe88c.png)
+  ![bg2015120901](https://user-images.githubusercontent.com/94165481/167757863-13ee8f57-a7ce-4cc4-b67e-e033d3dbe88c.png)
 
 `Windodws` 用户打开 `PowerShell`， `Mac` 用户打开 `终端`；
 
@@ -55,7 +55,7 @@
 
    ![InkedSnipaste_2022-05-10_15-40-59_LI](https://user-images.githubusercontent.com/94165481/167757553-1bd23799-37fb-4dd3-89e3-6507cd79d21a.jpg)
 
-​		用户名和邮箱已经修改。
+   用户名和邮箱已经修改。
 
 - **克隆项目**。下载项目代码：
 
@@ -66,11 +66,11 @@
 
   ![Snipaste_2022-05-11_11-31-58](https://user-images.githubusercontent.com/105333498/167763698-945964f3-8fd3-4885-8afe-6d32abd99135.png)
 
-![Snipaste_2022-05-11_11-32-48](https://user-images.githubusercontent.com/105333498/167763794-1e2b8f88-7979-4e8c-b983-1fd4f57ea91c.png)
+  ![Snipaste_2022-05-11_11-32-48](https://user-images.githubusercontent.com/105333498/167763794-1e2b8f88-7979-4e8c-b983-1fd4f57ea91c.png)
 
-​		完成之后，文件夹中已经有相应的工程了，由于当前的工程只有默认的 `README.md` 的文件，我们可以来新建一个工程。
+  完成之后，文件夹中已经有相应的工程了，由于当前的工程只有默认的 `README.md` 的文件，我们可以来新建一个工程。
 
-​		![Snipaste_2022-05-11_11-33-29](https://user-images.githubusercontent.com/105333498/167763859-20d2e670-7286-4306-9053-46689a7d551e.png)
+  ![Snipaste_2022-05-11_11-33-29](https://user-images.githubusercontent.com/105333498/167763859-20d2e670-7286-4306-9053-46689a7d551e.png)
 
 - **添加代码到暂存区**。添加新建的工程代码：
 
@@ -91,8 +91,7 @@
   ```
 
   ![Snipaste_2022-05-11_11-37-09](https://user-images.githubusercontent.com/105333498/167764214-a8ed87b0-c599-4b20-bee7-5417e50cc2c2.png)
-
-​		目前代码已经成功提交到了暂存区，也就是说现在只是提交到了我们本地，接下来，我们需要将这部分代码推送到远程服务器，这样	其他的人也可以获取最新的代码。
+  目前代码已经成功提交到了暂存区，也就是说现在只是提交到了我们本地，接下来，我们需要将这部分代码推送到远程服务器，这样	其他的人也可以获取最新的代码。
 
 - **查看分支**。在提交 Git 变化到远程服务器之前，我们来查看有远程有哪些分支：
 
@@ -106,8 +105,7 @@
   ```
 
   ![Snipaste_2022-05-11_11-38-13](https://user-images.githubusercontent.com/105333498/167764336-bb2e1078-ae23-4335-9feb-c90a636f4942.png)
-
-​		可以看到，本地当前分支为 `main`。远程分支目前有`main` 分支，这一般为主分支。我们当前是新建项目，那么就会推送到主分支。
+  可以看到，本地当前分支为 `main`。远程分支目前有`main` 分支，这一般为主分支。我们当前是新建项目，那么就会推送到主分支。
 
 - **推送远程分支**。
 
@@ -116,17 +114,12 @@
   $ git push [remote远程分支] [branch本地分支]
   ```
 
-​		![Snipaste_2022-05-11_13-32-45](https://user-images.githubusercontent.com/105333498/167776131-93d65ede-7b28-4ad7-8b80-51b55f603a2c.png)
-
-​		打开 Github，发现我们已经成功的上传了我们的本地代码到远程服务器了。
-
-​		![InkedSnipaste_2022-05-11_11-50-44_LI](https://user-images.githubusercontent.com/105333498/167776257-65898e88-4c86-4ac6-a5b5-53e3891a2402.jpg)
-
-​		**注意**，这里可能用人遇到无法上传的问题：
-
-​		 ![Snipaste_2022-05-11_13-37-05](https://user-images.githubusercontent.com/105333498/167776358-fac8dd5a-6332-4502-ab54-fd056908544b.png)
-
-​		这可能是由于上传时 `HTTPS` 的验证导致的，可以切换为 `SSH` 的方式上传，或者关闭 `HTTPS`：`git config --global --unset http.proxy` 。再试试是否可以推送成功。
+  ![Snipaste_2022-05-11_13-32-45](https://user-images.githubusercontent.com/105333498/167776131-93d65ede-7b28-4ad7-8b80-51b55f603a2c.png)
+  打开 Github，发现我们已经成功的上传了我们的本地代码到远程服务器了。
+  ![InkedSnipaste_2022-05-11_11-50-44_LI](https://user-images.githubusercontent.com/105333498/167776257-65898e88-4c86-4ac6-a5b5-53e3891a2402.jpg)
+  **注意**，这里可能用人遇到无法上传的问题：
+  ![Snipaste_2022-05-11_13-37-05](https://user-images.githubusercontent.com/105333498/167776358-fac8dd5a-6332-4502-ab54-fd056908544b.png)
+  这可能是由于上传时 `HTTPS` 的验证导致的，可以切换为 `SSH` 的方式上传，或者关闭 `HTTPS`：`git config --global --unset http.proxy` 。再试试是否可以推送成功。
 
 - **新增标签**。
 
@@ -141,9 +134,9 @@
 
   创建一个标签为 `1.0.1`的标签，并推送到远程分支。
 
-    ![Snipaste_2022-05-11_13-40-46](https://user-images.githubusercontent.com/105333498/167776750-e2e4d69b-e29e-432d-920d-b2d655deecec.png)
+  ![Snipaste_2022-05-11_13-40-46](https://user-images.githubusercontent.com/105333498/167776750-e2e4d69b-e29e-432d-920d-b2d655deecec.png)
 
-​		现在已经可以在 Github 主页看到相关的 `tag`：	![Snipaste_2022-05-10_16-42-52](https://user-images.githubusercontent.com/94165481/167587491-1f5dfe1f-544a-4a14-9d7b-fe67a0a39aa1.png)
+   现在已经可以在 Github 主页看到相关的 `tag`：	![Snipaste_2022-05-10_16-42-52](https://user-images.githubusercontent.com/94165481/167587491-1f5dfe1f-544a-4a14-9d7b-fe67a0a39aa1.png)
 
 - **分支**。在我们创建好 `main` 分支后，后续的开发都不会在 `main` 分支，一般会建立一个新的分支为 `develop` 。
 
@@ -196,8 +189,7 @@
   ```
 
    ![Snipaste_2022-05-11_13-52-56](https://user-images.githubusercontent.com/105333498/167778160-6b2361ed-b0e1-43a3-8620-09079de4f59a.png)
-
-​		![Snipaste_2022-05-11_13-53-51](https://user-images.githubusercontent.com/105333498/167778292-9864ff2d-6f32-407a-844a-b5e6a6874eb3.png)
+   ![Snipaste_2022-05-11_13-53-51](https://user-images.githubusercontent.com/105333498/167778292-9864ff2d-6f32-407a-844a-b5e6a6874eb3.png)
 
 ##  常用 Git 命令清单
 
@@ -493,19 +485,13 @@ $ git stash pop
 $ git archive
 ```
 
-
-
 ## GUI 操作
 
 目前市场几乎所有的 IDE 都集成了 Git 的 GUI。可以选择命令行操作，也可以使用一些第三方的 GUI 来管理 Git。常见的 Git 的 GUI 软件包含：[GitHub Desktop GitHub 官方客户端](https://desktop.github.com/) 、[SourceTree【推荐】](https://www.sourcetreeapp.com/) 、[Tower【好用但付费】](https://www.git-tower.com/windows) 、[SmartGit](https://www.syntevo.com/smartgit/) 、[Sublime Merge](https://www.sublimemerge.com/) 、[TortoiseGit](https://tortoisegit.org/)。
 
 可以根据个人的使用习惯和偏好选择自己喜欢的GUI。目前我以最常用的 Git 软件 SourceTree 为例。
 
-![Snipaste_2022-05-10_17-26-54](https://user-images.githubusercontent.com/94165481/167596601-44e0c2ed-1d15-42da-a5cd-0e466acc2d2f.png)
-
-
-
-
+  ![Snipaste_2022-05-10_17-26-54](https://user-images.githubusercontent.com/94165481/167596601-44e0c2ed-1d15-42da-a5cd-0e466acc2d2f.png)
 
 - **本地分支**，包含小圆点，并字体加粗的则是当前本地分支，可以看到当前分支为 `develop`：
 
@@ -513,7 +499,7 @@ $ git archive
 
 - **远程分支**：
 
-![Snipaste_2022-05-10_17-30-12](https://user-images.githubusercontent.com/94165481/167597184-42709cc2-afea-4398-8a4f-ab558e2d2537.png)
+  ![Snipaste_2022-05-10_17-30-12](https://user-images.githubusercontent.com/94165481/167597184-42709cc2-afea-4398-8a4f-ab558e2d2537.png)
 
 - **标签**：
 
@@ -521,7 +507,7 @@ $ git archive
 
 - **提交历史**，可以在提交历史看到当前的分支、标签、远程分支、提交内容、提交日期、提交用户以及每个提交的哈希值：
 
-![Snipaste_2022-05-10_17-36-05](https://user-images.githubusercontent.com/94165481/167598367-198b4c92-cbeb-4856-bfe2-c93d98a796aa.png)
+  ![Snipaste_2022-05-10_17-36-05](https://user-images.githubusercontent.com/94165481/167598367-198b4c92-cbeb-4856-bfe2-c93d98a796aa.png)
 
 
 
@@ -532,7 +518,7 @@ $ git archive
   4. 文件修改内容；
   5. 提交的相关的内容；
 
-![Snipaste_2022-05-10_17-42-01](https://user-images.githubusercontent.com/94165481/167599608-6b2a6e0c-cdf2-461c-a712-d90f3966db04.png)
+  ![Snipaste_2022-05-10_17-42-01](https://user-images.githubusercontent.com/94165481/167599608-6b2a6e0c-cdf2-461c-a712-d90f3966db04.png)
 
 - **添加文件到暂存区**。点击右侧"+"按钮添加文件到暂存区。查看哪些文件需要添加到本次提交，有些文件你修改来但还没有测试通过，所以暂未提交的话，就无需点击“+”。
 
