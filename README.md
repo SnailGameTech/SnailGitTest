@@ -59,7 +59,7 @@
 
  ![Snipaste_2022-05-11_14-24-47](https://user-images.githubusercontent.com/105333498/167782543-af07e66a-039e-4db5-b93a-e780f7563bb0.png)
 
-在 .git 目录下 index 文件(`.git/index`)，这就是**「暂存区」**，叫做 `stage` 或者 `index` ，index 和我们的数据库的 index 类似，所以我们有时候也叫它为**「索引」**。这四个区域实现的原理图所下所示：
+在 .git 目录下 index 文件(`.git/index`)，这就是 **「暂存区」**，叫做 `stage` 或者 `index` ，index 和我们的数据库的 index 类似，所以我们有时候也叫它为 **「索引」**。这四个区域实现的原理图所下所示：
 
 ![v2-2ba5b5e220c73820daadea21c9a1c4e5_720w](https://user-images.githubusercontent.com/105333498/167782767-6e40a32e-00b0-4b58-b86e-6f609a12fd67.jpg)
 
