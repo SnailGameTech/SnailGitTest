@@ -1,6 +1,6 @@
 # Git 使用说明文档
 
-**在开始操作之前，提示一下。因为 GitHub 在国内的网络不太稳定，很多同学可能遇到更新远程代码的时候出现网络相关的问题，可以参考这边[Issue](https://github.com/gittutorial2022/GitTest/issues)的解决办法。如果有其他的相关问题，可以在这里新增，其他同学可以回复自己的解决方法。**
+**在开始操作之前，提示一下。因为 GitHub 在国内的网络不太稳定，很多同学可能遇到更新远程代码的时候出现网络相关的问题，可以参考这边 [Issue](https://github.com/gittutorial2022/GitTest/issues) 的解决办法。如果有其他的相关问题，可以在这里新增，其他同学可以回复自己的解决方法。目前测试下来似乎 [GitHub Desktop](https://desktop.github.com/) 官方的软件最稳定。**
 
 ## 加入项目
 
