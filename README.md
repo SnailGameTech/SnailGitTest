@@ -19,7 +19,7 @@
 
   - 下载 GIt，可以通过这个官方链接下载 [Git](https://git-scm.com/) ；
   - 下载后，安装默认点击`下一步`安装完成即可，具体的安装流程可以参考[这个](https://www.cnblogs.com/xueweisuoyong/p/11914045.html)；
-  - `Windodws` 用户打开 `PowerShell`， `Mac` 用户打开 `终端` 操作 Git；
+  - `Windodws` 用户打开 [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2) 或 [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-cn&gl=CN)， `Mac` 用户打开 `终端` 操作 Git；
   - 在 Github 进入工程后，点击 `Code` ,可以看到 Git 的下载地址，这里有几个区别，`HTTPS` 的地址主要通过 Github 的邮箱和密码来验证权限；`SSH` 则通过一个在工程中加入的唯一的 SSH key 来验证权限。
   - 以通过账号密码来验证权限为例，拷贝 `HTTPS` 的 Git 地址：
 
