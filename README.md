@@ -132,6 +132,8 @@
   	```
 
     ![Snipaste_2022-05-11_11-35-52](https://user-images.githubusercontent.com/105333498/167764092-58aa03a9-69bc-44cc-8e13-28c9c0b089ef.png)
+    
+    >在这里，有些同学可能比较困惑，出现一些自己没有变更的文件，比如上图中的 `/GitTestProject/.vs/GitTestProject/v14/.suo` 和 `GitTestProject.VC.db`等文件。那是因为这些文件可能没有加入忽略文件列表中，我们会在 `.gitignore` 文件加入一些不需要同步的文件或者文件夹。如果你加入了这些文件格式但是还是捕捉到了这些文件，可能你就需要清空缓存。具体操作参考[这里](https://developer.aliyun.com/article/634481)。
 
 
   - **提交代码**。提交暂存区的代码：
