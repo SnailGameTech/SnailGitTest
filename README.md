@@ -82,8 +82,7 @@
    # 下载一个项目和它的整个代码历史
    $ git clone [url]
    ```
-
-   ![Snipaste_2022-05-11_11-31-58](https://user-images.githubusercontent.com/105333498/167763698-945964f3-8fd3-4885-8afe-6d32abd99135.png)
+   ![Snipaste_2022-05-13_17-50-55](https://user-images.githubusercontent.com/105352993/168259011-89a8b70d-ccaf-4015-bbbb-7200dd4f3164.png)
 
    ![Snipaste_2022-05-11_11-32-48](https://user-images.githubusercontent.com/105333498/167763794-1e2b8f88-7979-4e8c-b983-1fd4f57ea91c.png)
 
